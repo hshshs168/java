@@ -2,14 +2,17 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
+        int x,y,z;
         while (true){
-            int x,y;
             Scanner scanner=new Scanner(System.in);
-            System.out.println("输入x：");
-            x=scanner.nextInt();
-            x=(int)(Math.random()*100);
-            y=(int)(Math.random()*100);
-            System.out.println(x+","+y);
+            z=scanner.nextInt();
+            if (z==1) {
+                x = (int) (Math.random() * 100);
+                y = (int) (Math.random() * 100);
+                System.out.println(x + "," + y);
+            }else{
+                System.out.println("输入错误");
+            }
         }
     }
 }
